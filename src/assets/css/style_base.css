@@ -1,0 +1,178 @@
+/* ---------------------- GLOBAL VARIABLES ----------------------------- */
+
+*{
+    --col-orange-dark: #d08624;
+    --col-orange-light: #fa9b1e;
+    --col-blue-light: #606fa6;
+    --col-blue-indigo: #001e46;
+    --col-blue-dark: #1c1c35;
+    --col-red-dark: #6e0000;
+    --col-red-light: #bd0808;
+    --logo: url("../images/millionaire_logo.png");
+}
+
+/* ---------------------- FONTS ----------------------------- */
+
+@font-face {
+  font-family: Filetto;
+  src: url("../fonts/Filetto_bold.ttf");
+}
+
+@font-face {
+  font-family: Copperplate;
+  src: url("../fonts/Copperplate_Gothic.ttf");
+}
+
+/* ---------------------- MAIN ----------------------------- */
+
+body{
+    background:  no-repeat center center fixed, no-repeat center center fixed;
+    background-image: radial-gradient(#001e46 20%,rgb(0, 0, 0));
+    background-size: 100% 100%;
+}
+
+.hide
+{
+    display: none;
+}
+
+.flx{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flx-row{ flex-direction: row; }
+.flx-col{ flex-direction: column; }
+
+.full-width{ width: 100% }
+.full-height{ height: 100% }
+
+.debug-error{ color: var(--col-red-light) }
+
+
+/* ---------------------- BUTTON ----------------------------- */
+.btn{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171) 0%, var(--col-blue-light) 30%,rgba(0, 0, 0, 0.123) 110%);
+    border-radius: 8px;
+    color: white;
+    padding: 1em;
+    margin: .5em;
+    cursor: pointer;
+    text-align: center;
+    outline: outset  var(--col-blue-indigo) 3px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.btn-alert{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171) 0%, var(--col-red-light) 30%,rgba(0, 0, 0, 0.123) 110%);
+
+}
+
+.btn:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171), var(--col-orange-dark) 70%,rgba(0, 0, 0, 0.123));
+    outline: outset  var(--col-orange-light) 3px;
+}
+
+.btn:active{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342), var(--col-blue-dark) 70%,rgba(0, 0, 0, 0.274));
+    color: rgba(255, 255, 255, 0.671);
+}
+.btn[disabled]{
+    outline: solid  var(--col-blue-dark) 3px;
+    color: gray;
+    background: linear-gradient(rgba(0, 0, 0, 0.082) 10%, gray);
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+/* ---------------------- SELECT ----------------------------- */
+
+select
+{
+  font-family: Copperplate;
+  font-size: 25px;
+  color: white;
+  outline:none;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+select:-internal-list-box {
+
+    border: inherit;
+
+}
+select option:focus{
+  color: var(--col-blue-dark);
+}
+
+select option:checked{
+  color: white;
+  /* background: -webkit-linear-gradient(bottom, var(--col-orange-light) 0%, var(--col-orange-light) 100%); */
+}
+
+
+/* ---------------------- SCROLLBAR ----------------------------- */
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: var(--col-blue-dark); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(0, 0, 0), var(--col-blue-light) ,rgb(0, 0, 0));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(rgb(0, 0, 0), var(--col-blue-indigo) ,rgb(0, 0, 0)); 
+}
+
+/* ---------------------- POPUP ----------------------------- */
+.popup{
+    padding: 50px;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background: linear-gradient(rgb(0, 0, 0), var(--col-blue-indigo) ,rgb(0, 0, 0)); 
+    border-radius: 20px;
+    border: solid 5px var(--col-blue-indigo);
+    
+}
+
+.popup-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.popup-title{
+    font-size: 30px;
+    pointer-events: none;
+}
+
+
+/* ---------------------- INPUT FIELD ----------------------------- */
+
+input{
+  padding: 0.2em;
+  font-size: 25px;
+  color: var(--col-blue-indigo);
+  margin: 0 10px;
+  background: var(--col-blue-light);
+  text-align: center;
+  font-family: Filetto;
+}

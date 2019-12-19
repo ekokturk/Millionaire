@@ -3,9 +3,9 @@
 A multiplayer Who Wants To Be A Millionaire web game developed with **Vue.js**, **Express** and **MySQL** with three different player types as host, player and viewer. This game is selected as the **Best Mobile Application** by Vancouver Film School. It was developed with a team of three programmers and I worked mostly on backend functionality.
 
 ## **My Role**
-•	Implemented Nodejs Express server that interfaces with a MySQL database which can read/write game state data. 
-•	Created game host player functionality with capability of session creation and game flow control.
-•	Setup database with MySQL queries
+- Implemented Nodejs Express server that interfaces with a MySQL database which can read/write game state data. 
+- Created game host player functionality with capability of session creation and game flow control.
+- Setup database with MySQL queries
 
 ## **How To Use**
 - Requires MySQL database and Node.js to be installed

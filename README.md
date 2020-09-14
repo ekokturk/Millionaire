@@ -10,8 +10,17 @@ A multiplayer Who Wants To Be A Millionaire web game developed with **Vue.js**, 
 ## **How To Use**
 - Requires MySQL database and Node.js to be installed
 - Use 'npm install' command to download the required packages
-- Run 'Database.sql' queries to creat the database and 'TestData.sql' to fill it with sample data
+- Run 'Database.sql' (or 'Millionaire.mwb') queries to create the database and 'TestData.sql' to fill it with sample data
+- MySQL connection that has the database should match LOCALHOST variable in 'src/api/DatabaseConnection.js'
 - To display the app use 'npm run serve' once node packages are installed
+- Run 'node src/server.js' from project folder to start the server which will listen for requests
 - There are sample users added with test data called 'host' and 'viewer' who can be used for the game
+
+---
+
+## Screenshots
+
+Login
+[Login](/screenshots/1.jpg)
 
 Millionaire @copyright (C) 2019, Eser Kokturk, Alejandro Silva Torres, and Diego Montoya Martinez. All Rights Reserved.

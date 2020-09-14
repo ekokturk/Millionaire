@@ -10,13 +10,11 @@
           <div
             @click="doAskAudience()"
             class="life_line_1 lifeline btn btn_ll"
-            style="width: 67.5%; height: 67.5%"
             :disabled="!lifeLines.askAudience"
           ></div>
           <div
             @click="doFiftyFifty()"
             class="btn life_line_3 lifeline btn_ll"
-            style="width: 67.5%; height: 67.5%"
             :disabled="!lifeLines.fiftyFifty"
           ></div>
         </div>
@@ -36,13 +34,11 @@
           <div
             @click="doDoubleDip()"
             class="btn life_line_2 lifeline btn_ll"
-            style="width: 67.5%; height: 67.5%"
             :disabled="!lifeLines.doubleDip"
           ></div>
           <div
             @click="doJumpQuestion()"
             class="btn life_line_4 lifeline btn_ll"
-            style="width: 67.5%; height: 67.5%"
             :disabled="!lifeLines.jumpQuestion"
           ></div>
         </div>
@@ -87,12 +83,10 @@
         <div class="flx flx-col half-width" style="width: 35%">
           <div
             class="life_line_1 lifeline btn_ll2"
-            style="width: 67.5%; height: 67.5%"
             :disabled="!lifeLines.askAudience"
           ></div>
           <div
             class="life_line_3 lifeline btn_ll2"
-            style="width: 67.5%; height: 67.5%"
             :disabled="!lifeLines.fiftyFifty"
           ></div>
         </div>
@@ -110,12 +104,10 @@
         <div class="flx flx-col half-width" style="width: 35%">
           <div
             class="life_line_2 lifeline btn_ll2"
-            style="width: 50%"
             :disabled="!lifeLines.doubleDip"
           ></div>
           <div
             class="life_line_4 lifeline btn_ll2"
-            style="width: 50%"
             :disabled="!lifeLines.jumpQuestion"
           ></div>
         </div>
